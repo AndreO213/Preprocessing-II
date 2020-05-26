@@ -1,7 +1,7 @@
 // Navigation Styles here
 
 .top-nav {
-    width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     margin-top: 3%;
@@ -9,21 +9,23 @@
     #logo {
         display: flex;
         padding-right:15%;
+        .margin-sides(20%,2%)
     }
 
     nav {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        padding-bottom: 2%;
+        border-bottom: 2px dashed #C0C0C0;
     }
 
     #nav-bar {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        border: 1px solid black !important;
-        .margin-sides(3%, 3%);
-        width: 45%;
+        .margin-sides(3%, 20%);
         box-sizing: border-box;
+        width: 25%
 
     }
 
@@ -31,6 +33,25 @@
         display: flex;
         color: black;
         text-decoration: none;
-        .margin-sides(-30%,-30%);
+        font-size: 1.5rem;
     }
+}
+
+.bus-pic {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.intro {
+    max-width:800px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3%;
+    padding-bottom: 1.5%;
+    border-bottom: 2px dashed #C0C0C0;
+}
+
+.btn button {
+    .btn-style();
 }
